@@ -1,1 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@100;300;400&family=Roboto&family=Source+Code+Pro:wght@300;400;500&display=swap');
 
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.app {
+	width: 600px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.05;
+	text-align: left;
+}
+
+h2 {
+	font-size: 3.5rem;
+	line-height: 1.05;
+	text-align: center;
+}
+
+h3 {
+	margin: 10px;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.2;
+}
+
+.question-title {
+	width: 600px;
+	height: 210px;
+	background-color: rgb(102, 69, 221);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(255, 255, 255);
+}
+
+.questionsContainer {
+	margin: 16px 0 23px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.question-list {
+	width: 286px;
+	height: auto;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0 0 0 0.063rem;
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+}
+
+.question-list p {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.question-list a {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+}
