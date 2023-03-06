@@ -16,7 +16,7 @@ const QuestionsList = ({
 
 	const pickedAnswer =
 		!answerChosen?.includes(question.text) && //doesn't include the question text and the unanswered Id doesn't include the quiz item id
-		!unansweredQuestionId?.includes(quizItemId);
+		!unansweredQuestionId?.includes(quizItemId); //沒點到名字的就離開
 
 	return (
 		<button
