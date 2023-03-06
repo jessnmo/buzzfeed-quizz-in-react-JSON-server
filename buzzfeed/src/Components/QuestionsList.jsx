@@ -1,7 +1,29 @@
 //individual question
-const QuestionsList = ({ question }) => {
+const QuestionsList = ({
+	question,
+	setAnswerChosen,
+	answerChosen,
+	unansweredQuestionId,
+	setUnansweredQuestionId,
+	quizItemId,
+}) => {
+	const handleClick = () => {
+		setAnswerChosen((prevState) => [...prevState, question.text]); //getting whatever is in it previously, and add whatever we chose
+		setUnansweredQuestionId(
+			unansweredQuestionId.filter((id) => id !== quizItemId)
+		); //find the array and 點到名字請離開. set the new array under setUnansweredQuestionId
+	};
+
+	const pickedAnswer =
+		!answerChosen?.includes(question.text) && //doesn't include the question text and the unanswered Id doesn't include the quiz item id
+		!unansweredQuestionId?.includes(quizItemId);
+
 	return (
-		<button className="question-list">
+		<button
+			onClick={handleClick}
+			className="question-list"
+			disabled={pickedAnswer} //should not include the chosen answer text
+		>
 			<img src={question.image} alt={question.alt} />
 			<h3>{question.text}</h3>
 			<p>
