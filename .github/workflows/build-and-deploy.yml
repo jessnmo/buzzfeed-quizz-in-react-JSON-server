@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    
+    - name: Build and deploy
+      uses: some-action-using-node12@v1
+      with:
+        node-version: '16.x'
       
     - name: Install dependencies
       run: npm install
