@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/buzzfeed-quiz-in-react-with-json-server/static/css/main.0b2c8d8a.css",
+    "main.js": "/buzzfeed-quiz-in-react-with-json-server/static/js/main.1382ab9e.js",
+    "index.html": "/buzzfeed-quiz-in-react-with-json-server/index.html",
+    "main.0b2c8d8a.css.map": "/buzzfeed-quiz-in-react-with-json-server/static/css/main.0b2c8d8a.css.map",
+    "main.1382ab9e.js.map": "/buzzfeed-quiz-in-react-with-json-server/static/js/main.1382ab9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b2c8d8a.css",
+    "static/js/main.1382ab9e.js"
+  ]
+}
